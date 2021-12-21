@@ -1,0 +1,244 @@
+/*========================================*/
+/*------------ [Google_Font] -----------*/
+/*========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+
+/*========================================*/
+/*------------ [_Root] bde0feff-------FFC368----*/
+/*========================================*/
+:root {
+
+    /* Colors */
+    --bg-primary-color: #E5E5E5; 
+    --bg-secondary-color: #F1F1F1;
+    --text-primary-color: #000000;
+    --text-secondary-color: #C4C4C4;
+    --card-primary-color: #77B6D5;
+    --card-secondary-color: #0f5545;
+    --white-color: #FFF;
+
+    /* Font and Typography */
+    --font: 'Open Sans', sans-serif;
+
+    --mfont-max: 2.5rem;
+    --mfont-midi: 1.75rem;
+    --mfont-mini: 1.25rem;
+    --mfont-reg: .875rem;
+    --mfont-tiny: .75rem;
+
+    --font-bold: 800;
+    --font-semi: 600;
+    --font-norm: 400;
+    --font-light: 300;
+    
+}
+
+@media screen and (min-width:768px) {
+    :root {
+        --font-max: 4.5rem;
+        --font-midi: 3rem;
+        --font-mini: 1.75rem;
+        --font-reg: 1.125rem;
+        --font-tiny: 1rem;
+    }
+}
+
+/*========================================*/
+/*------------ [_Reset_Styles] -----------*/
+/*========================================*/
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*========================================*/
+/*--------------- [_Buttons] -------------*/
+/*========================================*/
+/*Btn Style Max*/
+
+ .button{
+    display: inline-block;
+    background: var(--white-color);
+    color: var(--text-primary-color);
+    padding: .75rem 1rem;
+    border-radius:  .625rem;
+    font-size: var(--mfont-reg);
+    font-weight: var(--font-semi);
+    margin-top: 1rem;
+    transition: .3s;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    background: transparent;
+    color: var(--text-primary-color);
+    padding: .75rem 1rem;
+    border-radius:  .625rem;
+    font-size: var(--mfont-reg);
+    font-weight: var(--font-semi);
+    margin-top: 1rem;
+    transition: .3s;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.dark{
+    background: var(--text-primary-color);
+    color: var(--white-color);
+    margin-right: 1rem;
+}
+
+.button:hover{
+    background: var(--text-secondary-color);
+}
+
+.btn:hover{
+    color: var(--text-primary-color);
+    border: var(--text-primary-color) solid 1px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .button{
+        padding: 1rem 2.5rem;
+        font-size: var(--font-tiny);
+        font-weight: var(--font-semi);
+    }
+}
+
+
+.checkout {
+    max-width: 1280px;
+    margin: auto;
+}
+.checkout .check{
+    font-size: var(--mfont-mini);
+    color: var(--card-primary-color);
+    margin: 20px;
+}
+.checkout .row{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--mfont-mini);
+}
+.column{
+    width: 50%;
+    padding: 20px;
+}
+.column h3{
+    font-size: var(--mfont-midi);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--mfont-midi);
+}
+.column .name{
+    display: flex;
+    justify-content: space-between;
+}
+.column label{
+    font-size: var(--mfont-mini);
+    width: 100%;
+    margin-top: var(--mfont-midi);
+}
+.column input{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    border: none;
+    border-radius: 10px;
+    height: 70px;
+    margin-top: var(--mfont-mini);
+    margin-bottom: var(--mfont-midi);
+    padding: 10px;
+}
+.column input::placeholder{
+    color: var(--text-secondary-color);
+    font-size: var(--mfont-mini);
+    outline: none;
+    font-weight: var(--font-norm);
+}
+.column select{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    border: none;
+    border-radius: 10px;
+    height: 70px;
+    margin-top: var(--mfont-mini);
+    margin-bottom: var(--mfont-midi);
+    padding: 10px;
+    font-size: var(--mfont-mini);
+    outline: none;
+}
+
+.column select option{
+    font-size: var(--mfont-mini);
+}
+.column textarea{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    border: none;
+    border-radius: 10px;
+    height: 10rem;
+    margin-top: var(--mfont-mini);
+    margin-bottom: var(--mfont-midi);
+    padding: 20px;
+    font-size: var(--mfont-mini);
+    outline: none;
+}
+
+.yourOrder {
+    width: 100%;
+    padding: 20px;
+}
+.yourOrder h3{
+    font-size: var(--mfont-midi);
+    margin-bottom: var(--mfont-midi);
+    font-weight: var(--font-semi);
+}
+.yourOrder table{
+    width: 100%;
+    text-align: left;
+}
+table tr{
+    height: 70px;
+}
+table th{
+    font-size: var(--mfont-mini);
+    font-weight: var(--font-semi);
+    border-bottom: 1px solid #d4d4d4;
+}
+table td{
+    font-size: var(--mfont-mini);
+    border-bottom: 1px solid #d4d4d4;
+}
+form .button{
+    color: var(--white-color);
+    background: var(--text-primary-color);
+    height: 69px;
+    width: 15rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .column{
+        width: 100%;
+        padding: 0%;
+    }
+}
